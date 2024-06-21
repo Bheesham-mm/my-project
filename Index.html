@@ -1,0 +1,412 @@
+<html>
+<head>
+<title>Learn html Basic</title>
+</head>
+<style>
+*{
+margin: auto;
+padding: auto;
+/*font-family: Arial;*/
+/*display: flex;*/
+}
+/*##### heading #####*/
+header{
+background-color: #381238;
+color: white;
+padding: 20px;
+font-family: cursive;
+}
+nav{
+text-align: center;
+font-family: cursive;
+background-color: #381238;
+padding: 20px;
+}
+.sticky{
+position: fixed;
+top: 0;
+width: 150%;
+margin-left: -5px;
+}
+@media screen and (min-width: 400px) {
+  .sticky{
+	width: 100%;
+	margin-left: 0px;
+  }
+}
+.Center{
+text-align: center;
+}
+.center:hover{
+color: blue;
+transition: unset;
+animation-timing-function: ease;
+}
+/* Manu bar */
+/*ul, li,*/ a{
+text-decoration: none;
+color: #c3baba;
+display: inline-block;
+list-style-type: none;
+padding: 10px;
+text-align: center;
+text-align: center;
+font-size: 2vw;
+margin: 0;
+}
+a:hover{
+padding: 10px;
+font-size: 2.2vw;
+text-decoration: underline;
+text-underline-offset: 10px;
+}
+.text-color{
+border: 1px;
+border-style: solid;
+border-color: gray;
+background-color: gray;
+border-radius:20px;
+text-align: center;
+color: wheat;
+font-size: 3vw;
+padding: 15px;
+margin-top: 20px;
+margin-bottom: 20px;
+font-weight: bold;
+font-family: fangsong;
+}
+.text-color:hover{
+color: white;
+background-color: black; 
+}
+hr{
+border-top: 8px dotted yellowgreen;
+border-radius: 10px;
+margin: 10px;
+padding: 20px;
+border-right: none;
+border-left: none;
+border-bottom: none;
+}
+#hr-design {
+border-top: 6px dotted gray;
+border-radius: 8px;
+margin: 10px;
+padding: 20px;
+border-right: none;
+border-left: none;
+border-bottom: none;
+}
+p{
+font-size: 2vw;
+font-family: Consolas;
+}
+.pad{
+padding: 20px;
+}
+/*############ Login Form ############*/
+form {
+border: 5px solid #f1f1f1;
+}
+.log{
+text-align: center;
+}
+input[type=text], input[type=password] {
+width: 100%;
+padding: 12px 20px;
+margin: 8px 0;
+display: inline-block;
+border: 2px solid #ccc;
+box-sizing: border-box;
+}
+button {
+background-color: #04AA6D;
+color: white;
+padding: 14px 20px;
+margin: 8px 0;
+border: none;
+cursor: pointer;
+width: 100%;
+}
+button:hover {
+ opacity: 0.8;
+}
+.cancelbtn {
+width: auto;
+padding: 10px 18px;
+background-color: #f44336;
+}
+.imgcontainer {
+text-align: center;
+margin: 24px 0 12px 0;
+}
+img.avatar {
+width: 40%;
+border-radius: 50%;
+}
+.container {
+padding: 16px;
+}
+span.psw {
+float: right;
+padding-top: 16px;
+}
+/*######## Change styles for span and button on extra small screens ##########*/
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+/*############# SCROLL BAR #############*/
+/* width */
+::-webkit-scrollbar {
+  width: 15px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background-image: linear-gradient(#ff8a00, #e52e71);
+  border-radius: 10px;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+ background-image: linear-gradient(40deg, rgb(255 0 0) 60%, orange);
+}
+/*################# Footer ################*/
+footer{
+background-color: #381238;
+height: 120;
+width: 100%;
+color: white;
+text-align: center;
+font-family: Arial;
+}
+.copy{
+font-size: 1.8rem;
+padding: 20px;
+margin-top: 50px;
+}
+</style>
+<body>
+<!-- header -->
+<header>
+<div>
+<h1 class="Center">Welcome to Learn HTML Basic</h1>
+</div>
+</header>
+<!-- Manu bar -->
+<nav id="menu-bar">
+<a href="#Structure">Structure</a>
+<a href="#Text">Text</a>
+<a href="#Lists">Lists</a>
+<a href="#Links">Links</a>
+<<a href="#Images">Images</a>
+<a href="#Lable">Lable</a>
+<a href="#Forms">Forms</a>
+<a href="#ExtraMarkup">Extra</a>
+<a href="#ExtraMarkup">Markup</a>
+<a href="#Media">Media</a>
+</nav>
+<br />
+<br />
+<br />
+<div class="pad">
+<!-- section start -->
+<!--################ CHAPTER 1 ##################-->
+<section id="Structure">
+<h1 class="text-color">Chapter 1: Structure</h1>
+<hr />
+<p>The structure of HTML document includes the of element such as html, head and body These element help to defin the layout and content of a web Page.
+</p>
+</section>
+<br />
+<br />
+<br />
+<!--################ CHAPTER 2 ##################-->
+<section id="Text">
+<h1 class="text-color">Chapter 2: Text</h1>
+<hr />
+<p>HTML offers six levels of heading, from h1 Each heading level represents a different level of importance.</p><br /><br /><br />
+<h1>Heading 1</h1>
+<h2>Heading 2</h2>
+<!-- <hr class="hr-design" id="hr-design" /> -->
+<div>
+<h3>Heading 3</h3>
+<h4>Heading 4</h4>
+<h5>Heading 5</h5>
+<h6>Heading 6</h6>
+</div>
+<br />
+<h2 style="background-color: #bdb8b8; width: 115px; padding: 10px; border-radius: 20px; color: #e0f6ff;">Paragraph</h2><br />
+<p>Paragraph are defined with the p tag
+<br />
+<p>This is a sample paragraph demonstrating the paragraph tag.
+</section>
+<br />
+<br />
+<br />
+<!--################ CHAPTER 3 ##################-->
+<section id="Lists">
+<h1 class="text-color">Chapter 3: Lists</h1>
+<hr />
+<h2>Ordered List</h2><br />
+<ol>
+<li class="list">First item</li>
+<ol>
+<li class="list">Sub item 1</li>
+<li class="list">Sub item 2</li>
+</ol>
+<li class="list">Second item</li>
+<ol>
+<li class="list">Sub sub item 1</li>
+<li class="list">Sub sub item 2</li>
+</ol>
+<li class="list">THird item</li>
+</ol><br />
+<h2>Unorderd list</h2><br />
+<ul>
+<li>First item</li>
+<ul>
+<li>Sub item 1</li>
+<li>Sub item 2</li>
+</ul>
+<li>Second item</li>
+<ul>
+<li>Sub sub item 1</li>
+<li>Sub sub item 2</li>
+</ul>
+<li>Third item</li>
+</ul><br />
+<h2>Definition List</h2><br />
+<dl>
+<dt>HTML</dt>
+<dd>A markup language of creating</dd><br />
+<dt>CSS</dt>
+<dd>A style sheet language used for describing the presentation of a documen t written in HTML.</dd><br />
+<dt>JavaScript</dt>
+<dd>A programming language commonly used in web development to create interactive effects within web browser.</dd><br />
+</dl>
+</section>
+<br />
+<br />
+<br />
+<br />
+<!--################ CHAPTER 4 ##################-->
+<section id="Links">
+<h1 class="text-color">Chapter 4: Links</h1>
+<hr />
+<p>Links are using the a Tag.</p><br />
+<a href="Visit-Example.html">Visit Example</a>
+</section>
+<br />
+<br />
+<br />
+<br />
+<!--################ CHAPTER 5 ##################-->
+<section  id="Images">
+<h1 class="text-color">Chapter 5: Images</h1>
+<hr />
+<p>Images are Embedded using the img tag</p>
+<img src="https://madanbhanani-assignment7.netlify.app/h..j.png">
+</section>
+<br />
+<br />
+<br />
+<br />
+<!--################ CHAPTER 6 ##################-->
+<section id="Table">
+<h2 class="text-color">Chapter 6: Tables</h2>
+<hr /><br /><br /><br />
+<table border="1" width="910" height="100" style="border-collapse: collapse;">
+<tbody>
+<tr>
+<th>Header 1</th>
+<th>Header 2</th>
+</tr>
+<tr>
+<td>Data 1</td>
+<td>Data 2</td>
+</tr>
+</tbody>
+</table>
+</section>
+<br />
+<br />
+<br />
+<br />
+<!--################ CHAPTER 7 ##################-->
+<section id="Forms">
+<h1 class="text-color">Chapter 7: Forms</h1>
+<hr/>
+<form action="#">
+<h2 class="log">Login Form<h2>
+<div class="container">
+<label for="uname"><b>Username</b></label>
+<input id="uname" type="text" placeholder="Enter Username" name="uname" required>
+<label for="psw"><b>Password</b></label>
+<input id="psw" type="password" placeholder="Enter Password" name="psw" required>
+<button type="submit">Login</button>
+</div>
+</form>
+</section>
+<br />
+<br />
+<br />
+<br />
+<!--################ CHAPTER 8 ##################-->
+<section id="ExtraMarkup">
+<h1 class="text-color">Chapter 8: Extra Markup</h1>
+<hr />
+<br />
+<p>Additional elements include div, span, and more.</p>
+<br />
+<div><span>This is a span inside a div</span></div>
+</section>
+<section id="Media">
+<!--################ CHAPTER 9 ##################-->
+<h1 class="text-color">Chapter 9: Media</h1>
+<hr />
+<h2 class="log">Videos</h2>
+<video controls width="800" heght="500">
+<source src="Videos.mp4"></source>
+</video>
+<br /><br />
+<h2 class="log">Audio</h3>
+<audio controls style="justify-content: center;">
+<source src="audio.mp3"></source>
+</audio>
+<br />
+<br />
+<br />
+<br />
+</div>
+<!-- Section End -->
+<!-- Footer Start -->
+<footer>
+<!-- Copyright -->
+<div>
+<p class="copy">&copy; 2024 Powered by. Bheesham m-m</p>
+</div>
+</footer>
+</body>
+<!-- Sticky js -->
+<script>
+window.addEventListener('scroll', 
+function(){
+let navbar = document.getElementById('menu-bar');
+if(window.pageYOffset >= 84){
+navbar.classList.add('sticky')
+}else{
+navbar.classList.remove('sticky');
+}
+});
+</script>
+</html>
